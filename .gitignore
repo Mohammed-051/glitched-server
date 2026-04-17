@@ -1,0 +1,62 @@
+﻿# Build outputs
+*.o
+*.obj
+*.so
+*.a
+*.lib
+*.dll
+*.exe
+*.out
+*.app
+*.i*
+
+# Debug / profiling
+*.dSYM/
+*.su
+*.idb
+*.pdb
+*.ilk
+*.gcda
+*.gcno
+*.gcov
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+compile_commands.json
+Makefile
+CTestTestfile.cmake
+_deps/
+
+# Autotools
+aclocal.m4
+autom4te.cache/
+compile
+depcomp
+install-sh
+libtool
+ltmain.sh
+missing
+m4/
+
+# Ninja
+.ninja_deps
+.ninja_log
+build.ninja
+
+# IDE / editor
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Code::Blocks
+*.layout
+*.depend
+
+# OS files
+.DS_Store
+Thumbs.db
