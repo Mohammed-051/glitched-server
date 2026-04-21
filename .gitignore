@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿# Build outputs
 *.o
 *.obj
@@ -60,3 +61,30 @@ build.ninja
 # OS files
 .DS_Store
 Thumbs.db
+=======
+# Code::Blocks user-specific files
+*.depend
+*.layout
+
+# Build directories
+bin/
+obj/
+
+# Compiler and linker outputs
+*.o
+*.obj
+*.exe
+*.out
+*.dll
+*.so
+*.a
+*.lib
+
+# Debug symbols
+*.pdb
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+>>>>>>> 90aafd4 (Initial commit: Glitched Server v1.0 architecture and core loop)
