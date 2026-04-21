@@ -32,8 +32,8 @@ Glitched Server demonstrates practical computer science depth:
 ## How to Run
 
 1. Clone the repository:
-   git clone https://github.com/Mohammed-051/escape-room.git
-   cd "escape-room"
+   git clone https://github.com/Mohammed-051/glitched-server.git
+   cd "glitched-server"
 
 2. Ensure your environment is ready:
    - Code::Blocks with MinGW installed.
