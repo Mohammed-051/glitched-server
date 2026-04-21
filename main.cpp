@@ -274,7 +274,7 @@ std::vector<LevelData> buildLevels()
 
     std::vector<LevelData> result;
     result.reserve(2);
-    result.push_back(createLevelData(LEVEL_1_GRID, 10.5f, level1WallColor, 0.040f, 1.0f, 1.0f, 3));
+    result.push_back(createLevelData(LEVEL_1_GRID, 10.5f, level1WallColor, 0.040f, 1.0f, 1.6f, 3));
     result.push_back(createLevelData(LEVEL_2_GRID, 18.0f, level2WallColor, 0.065f, 2.5f, 1.30f, 4));
     return result;
 }
@@ -3126,8 +3126,10 @@ void updateScene()
         targetedInteractableIndex = -1;
         updateDoorLockState();
 
-        const float adminRoamStep = ADMIN_ROAM_STEP * getCurrentLevel().adminSpeedMult;
-        const float adminHuntStep = ADMIN_HUNT_STEP * getCurrentLevel().adminSpeedMult;
+        // FIX APPLIED HERE: Multiply Admin steps by (dt * 60.0f) to normalize speed across all frame rates
+        const float adminRoamStep = ADMIN_ROAM_STEP * getCurrentLevel().adminSpeedMult * (dt * 60.0f);
+        const float adminHuntStep = ADMIN_HUNT_STEP * getCurrentLevel().adminSpeedMult * (dt * 60.0f);
+
         const bool playerDetected = canAdminDetectPlayer();
         const int playerGridX = worldToGrid(gState.camX);
         const int playerGridZ = worldToGrid(gState.camZ);
