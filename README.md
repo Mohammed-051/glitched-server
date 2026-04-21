@@ -48,4 +48,4 @@ Glitched Server demonstrates practical computer science depth:
 
 ## Operator Log
 - Lead Developer: Mohammed Mahmud Parvez
-- Call-sign: Coffeehead
+- Contributors : Tahmidul Islam Mugdha, Rahul Roy Rik
